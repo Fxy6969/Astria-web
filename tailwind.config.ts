@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
-const { fontFamily } = require("tailwindcss/defaultTheme")
+const { fontFamily } = require("tailwindcss/defaultTheme");
 
 const {
   default: flattenColorPalette,
@@ -9,11 +9,11 @@ const {
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -25,7 +25,11 @@ const config = {
     },
     extend: {
       fontSize: {
-        xs: "0.70rem"
+        xs: "0.70rem",
+      },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(115.54deg, #FFFFFF -75.36%, #FF7D7D 59.61%, #8CA5FF 218.05%)",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -35,6 +39,11 @@ const config = {
         foreground: "hsl(var(--foreground))",
         back: "rgba(9, 9, 11)",
         navbar_bg: "#22222215",
+
+        // Cards
+        card_bg: "rgba(78, 78, 78, 0.1)",
+        text_gray: "rgba(255, 255, 255, 0.4)",
+
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -69,7 +78,7 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
-      
+
       keyframes: {
         marquee: {
           from: { transform: "translateX(0)" },
@@ -120,7 +129,7 @@ const config = {
           "100%": {
             opacity: "0.4",
           },
-          },
+        },
         spotlight: {
           "0%": {
             opacity: "0",
@@ -155,7 +164,17 @@ const config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config
 
-export default config
+  use: {
+    loader: "file-loader",
+    option: {
+      limit: false,
+      name: "[name]",
+      outputPath: "assets/",
+    },
+  },
+  test: /\.(jpe?g|png|gif|svg)$/i,
+  plugins: [require("tailwindcss-animate")],
+} satisfies Config;
+
+export default config;

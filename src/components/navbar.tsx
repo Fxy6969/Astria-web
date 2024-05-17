@@ -1,62 +1,57 @@
-'use client';
+"use client";
 
 import React from "react";
 import Link from "next/link";
 
 import "../app/style.css";
 
-import { MoonIcon, SunIcon } from "@radix-ui/react-icons"
-import { useTheme } from "next-themes"
+import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
+import { useTheme } from "next-themes";
 
 // Icons
-import { GitHubLogoIcon, Component1Icon } from '@radix-ui/react-icons';
+import { GitHubLogoIcon, Component1Icon } from "@radix-ui/react-icons";
 import { FaDiscord, FaShoppingBasket } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
 
-
 // Components
 import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Button } from "@/components/ui/button"
-  
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
 
 export function NavBar() {
-    const { setTheme } = useTheme()
+  const { setTheme } = useTheme();
 
-    return (
-        <>
-            <div className="navbar border">
-                <nav className="flex items-center justify-between gap-3">
-                    <Link href="/" className="items-center flex gap-2 font-semibold">
-                        <Component1Icon />
-                        Eclipse
-                    </Link>
+  return (
+    <>
+      <div className="navbar border backdrop-blur-xl">
+        <nav className="flex items-center justify-between gap-3">
+          <Link href="/" className="items-center flex gap-2 font-semibold">
+            <Component1Icon />
+            Eclipse
+          </Link>
 
-                    <div className="flex items-center justify-items-center gap-3 font-semibold">
-                        <Link href="/">
-                            Pricing
-                        </Link>
-                        <Link href="/">
-                            Projects
-                        </Link>
-                        <Link href="/">
-                            Careers
-                        </Link>
-                        <Link href="/">
-                            Developers
-                        </Link>
-                    </div>
+          <div className="flex items-center justify-items-center gap-3 font-semibold">
+            <Link href="/">Pricing</Link>
+            <Link href="/">Projects</Link>
+            <Link href="/">Careers</Link>
+            <Link href="/">Developers</Link>
+          </div>
 
-                    <div className="flex items-center gap-3">
-                        <Button asChild variant="outline" className="discord-button" size={"gyat"}>
-                            <Link href="/">Contact Us</Link>
-                        </Button>
+          <div className="flex items-center gap-3">
+            <Button
+              asChild
+              variant="outline"
+              className="discord-button"
+              size={"gyat"}
+            >
+              <Link href="/">Contact Us</Link>
+            </Button>
 
-                        {/* <DropdownMenu>
+            {/* <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                             <Button variant="outline" size="icon">
                                 <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -73,9 +68,9 @@ export function NavBar() {
                             </DropdownMenuItem>
                             </DropdownMenuContent>
                         </DropdownMenu> */}
-                    </div>
-                </nav>
-            </div>
-        </>
-    )
+          </div>
+        </nav>
+      </div>
+    </>
+  );
 }
