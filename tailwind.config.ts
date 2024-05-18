@@ -31,6 +31,9 @@ const config = {
         "custom-gradient":
           "linear-gradient(115.54deg, #FFFFFF -75.36%, #FF7D7D 59.61%, #8CA5FF 218.05%)",
       },
+      backgroundColor: {
+        "custom-purple": "rgba(46, 7, 33)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -44,6 +47,8 @@ const config = {
         card_bg: "rgba(78, 78, 78, 0.1)",
         text_gray: "rgba(255, 255, 255, 0.4)",
 
+        // adapt section
+        purple: "#aa2570",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -80,6 +85,19 @@ const config = {
       },
 
       keyframes: {
+        "image-glow": {
+          "0%": {
+            opacity: "0",
+            "animation-timing-function": "cubic-bezier(0.74, 0.25, 0.76, 1)",
+          },
+          "10%": {
+            opacity: "0.7",
+            "animation-timing-function": "cubic-bezier(0.12, 0.01, 0.08, 0.99)",
+          },
+          "100%": {
+            opacity: "0.4",
+          },
+        },
         "border-beam": {
           "100%": {
             "offset-distance": "100%",
@@ -117,24 +135,6 @@ const config = {
             "background-position": "calc(100% + var(--shimmer-width)) 0",
           },
         },
-        "border-beam": {
-          "100%": {
-            "offset-distance": "100%",
-          },
-        },
-        "image-glow": {
-          "0%": {
-            opacity: "0",
-            "animation-timing-function": "cubic-bezier(0.74, 0.25, 0.76, 1)",
-          },
-          "10%": {
-            opacity: "0.7",
-            "animation-timing-function": "cubic-bezier(0.12, 0.01, 0.08, 0.99)",
-          },
-          "100%": {
-            opacity: "0.4",
-          },
-        },
         spotlight: {
           "0%": {
             opacity: "0",
@@ -158,6 +158,7 @@ const config = {
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         meteor: "meteor 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        "image-glow": "image-glow 4100ms 600ms ease-out forwards",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fade-in 1000ms var(--animation-delay, 0ms) ease forwards",
@@ -165,8 +166,6 @@ const config = {
         shimmer: "shimmer 8s infinite",
         marquee: "marquee var(--duration) infinite linear",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
-        "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
-        "image-glow": "image-glow 4100ms 600ms ease-out forwards",
       },
     },
   },

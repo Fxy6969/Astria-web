@@ -2,8 +2,9 @@ import NumberTicker from "../magicui/number-ticker";
 import RadialGradient from "@/components/magicui/radial-gradient";
 import { Moving } from "@/components/moving";
 import { BorderBeam } from "@/components/magicui/border-beam";
+import TextShimmer from "@/components/magicui/text-shimmer";
 
-export default function Card_Section() {
+export default function CardSection() {
   return (
     <section className="w-full pt-20">
       <div className="overflow-x-hidden absolute blur-3xl -z-50 h-full w-full rounded-lg bg-transparent">
@@ -20,15 +21,20 @@ export default function Card_Section() {
           size={370}
         />
       </div>
-      <div className="flex justify-center text-center items-center">
-        <h1 className="font-bold text-center text-6xl pb-20">
+      <div className="justify-center text-center items-center">
+        <div className="backdrop-blur-xl border rounded-2xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
+          <TextShimmer className="inline-flex items-center justify-center">
+            <span>🤔 Why should you choose Eclipse?</span>{" "}
+          </TextShimmer>
+        </div>
+        <h1 className="font-bold text-center text-6xl pt-[2vh] pb-10">
           Revolutionize your design <br />
           experience with Eclipse
         </h1>
       </div>
 
       <div className="flex flex-wrap gap-3 gap-y-2 justify-center">
-        <div className="border-[1.7px] bg-card_bg w-[22.3vw] h-[48vh] rounded-[13px] backdrop-blur-xl">
+        <div className="border-[1.7px] hover:border-white/15 transition-all bg-card_bg w-[22.3vw] h-[48vh] rounded-[13px] backdrop-blur-xl">
           <h1 className="pl-6 pt-5 font-medium text-[24px]">Customer Growth</h1>
           <p className="font-regular pl-6 pt-1 text-[14px] text-text_gray">
             Our designs attract and captive your audience. With <br />
@@ -152,7 +158,7 @@ export default function Card_Section() {
 
         {/* Second Card */}
         <div className="flex flex-col gap-3">
-          <div className="border-[1.7px] bg-card_bg w-[60.3vw] h-[27vh] rounded-[13px]">
+          <div className="border-[1.7px] hover:border-white/15 transition-all bg-card_bg w-[60.3vw] h-[27vh] rounded-[13px]">
             <h1 className="pl-6 pt-5 font-medium text-[24px]">Join Our Team</h1>
             <p className="font-regular pl-6 pt-1 text-[14px] text-text_gray">
               Explore career opportunities with Eclipse. Check our <br />
@@ -162,16 +168,16 @@ export default function Card_Section() {
           </div>
           <div className="flex gap-3">
             {/* Third Card */}
-            <div className="border-[1.7px] bg-card_bg w-[21vw] p-4 rounded-[13px] backdrop-blur-xl">
+            <div className="hover:border-white/15 transition-all border-[1.7px] bg-card_bg w-[21vw] p-4 rounded-[13px] backdrop-blur-xl">
               <h1 className="leading-tight tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
                 Our Resolute
                 <br /> Commitment
                 <br /> to Detail
               </h1>
-              <BorderBeam size={150} duration={8} delay={2} />
+              <BorderBeam card={true} size={150} duration={8} delay={2} />
             </div>
             {/* Fourth Card */}
-            <div className="border-[1.7px] bg-card_bg w-[19vw] h-[17vh] rounded-[13px] backdrop-blur-xl">
+            <div className="hover:border-white/15 transition-all border-[1.7px] bg-card_bg w-[19vw] h-[17vh] rounded-[13px] backdrop-blur-xl">
               <h1 className="pl-6 pt-6 leading-[6vh] tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
                 <NumberTicker value={45} />%
               </h1>
@@ -181,7 +187,7 @@ export default function Card_Section() {
               </p>
             </div>
             {/* Fifth Card */}
-            <div className="border-[1.7px] bg-card_bg w-[19vw] h-[17vh] rounded-[13px] backdrop-blur-xl">
+            <div className="hover:border-white/15 transition-all border-[1.7px] bg-card_bg w-[19vw] h-[17vh] rounded-[13px] backdrop-blur-xl">
               <h1 className="pl-6 pt-6 leading-[6vh] tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
                 <NumberTicker value={30} />%
               </h1>

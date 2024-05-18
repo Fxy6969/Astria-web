@@ -9,19 +9,12 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; 
-}
-
-.webgl-canvas {
-    width: 100%;
-    height: 100%;
-    right: 200%;
+    z-index: -1;
 }
 
 .navbar {
     margin: 2vh 20rem;
-    padding: 1vh 1rem;
-    background-color: #22222215;
+    padding: 1vh 1vw;
     border-radius: 12px;
 }
 
@@ -33,5 +26,5 @@
 }
 
 .newtag {
-    background-color: #FC9E70;
+    background-color: #fc9e70;
 }

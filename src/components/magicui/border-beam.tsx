@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 
 interface BorderBeamProps {
   className?: string;
+  card?: boolean;
   size?: number;
   duration?: number;
   borderWidth?: number;
@@ -13,12 +14,13 @@ interface BorderBeamProps {
 
 export const BorderBeam = ({
   className,
+  card,
   size = 200,
   duration = 15,
   anchor = 90,
   borderWidth = 1.5,
-  colorFrom = "#FF7D7D",
-  colorTo = "#FF4848",
+  colorFrom = card ? "#FF7D7D" : "#FFFFFF",
+  colorTo = card ? "#FF4848" : "#FFFFFF",
   delay = 0,
 }: BorderBeamProps) => {
   return (

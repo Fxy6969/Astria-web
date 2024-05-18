@@ -25,7 +25,8 @@ import { Meteors } from "@/components/meteors";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 // Sections
-import Card_Section from "@/components/sections/cards";
+import CardSection from "@/components/sections/cards";
+import ProjectSection from "@/components/sections/projects";
 
 export function Page() {
   const ref = useRef(null);
@@ -76,7 +77,8 @@ export function Page() {
         </div>
         <Companies />
       </section>
-      <Card_Section />
+      <CardSection />
+      <ProjectSection />
     </>
   );
 }
