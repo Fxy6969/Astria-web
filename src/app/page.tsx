@@ -1,5 +1,5 @@
-'use client';
-import { Page } from '../components/home'
+"use client";
+import { Page } from "../components/home";
 import Particles from "@/components/magicui/particles";
 import { Footer } from "@/components/magicui/footer";
 
@@ -18,7 +18,7 @@ export default function Home() {
         staticity={40}
         color={"#ffffff"}
       />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

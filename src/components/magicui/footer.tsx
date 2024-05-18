@@ -2,6 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
 import { ChevronRight, HeartHandshake } from "lucide-react";
+import RadialGradient from "@/components/magicui/radial-gradient";
 
 const footerNavs = [
   {
