@@ -1,15 +1,13 @@
 "use client";
 
-import { NavBar } from "@/components/navbar";
-import { Companies } from "./moving-cards";
 import TextShimmer from "@/components/magicui/animated-shiny-text";
-import { Spotlight } from "@/components/Spotlight";
+import { Spotlight } from "@/components/ui/Spotlight";
 import { Button } from "@/components/ui/button";
 import WordRotate from "./magicui/word-rotate";
 import { BorderBeam } from "@/components/magicui/border-beam";
+import Header from "@/components/custom-comps/header";
 
 import Link from "next/link";
-import { cn } from "@/lib/utils";
 import React from "react";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
@@ -20,6 +18,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 // Sections
 import CardSection from "@/components/sections/cards";
 import ProjectSection from "@/components/sections/projects";
+import Details from "@/components/sections/details";
 
 export function Page() {
   const ref = useRef(null);
@@ -27,15 +26,29 @@ export function Page() {
 
   return (
     <>
-      <NavBar />
+      <Header />
 
-      <section className="relative mx-auto mt-32 max-w-[80rem] px-6 text-center md:px-8">
-        <div className="backdrop-blur-xl border rounded-2xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-          <TextShimmer className="inline-flex items-center justify-center">
-            <span>🚀 20% Discount for new Customers!</span>{" "}
-          </TextShimmer>
+      <section className="relative mx-auto mt-[9rem] max-w-[80rem] px-6 text-center md:px-8">
+        <div className="flex text-center items-center justify-center">
+          <div className="flex text-center items-center justify-center gap-6 rounded-[999px] p-1 pr-2 shadow-main_tag w-max border-[1px] border-navbar_shadow border-solid backdrop-blur-[12px] bg-nav-background">
+            <div className="shadow-main_tag rounded-[999px] pr-[5px] pt-[2px] pb-[2px] pl-[5px] w-max border-[1px] border-navbar_shadow border-solid backdrop-blur-[12px] bg-nav-background">
+              <div className="text-[13px] outline-none flex flex-col justify-star flex-shrink-0 ">
+                <p className="text-navbar_text_color">Latest Release</p>
+              </div>
+            </div>
+            <div className="flex justify-center items-center text-center gap-6">
+              <TextShimmer className="text-[16px]">
+                <span>Introducing Adapt!</span>{" "}
+              </TextShimmer>
+              <div className="p-[2px] shadow-main_tag rounded-[999px] w-max border-[1px] border-navbar_shadow border-solid backdrop-blur-[12px] bg-nav-background">
+                <Link href="./">
+                  <ArrowRightIcon />
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="justify-center text-center items-center">
+        <div className="pt-4 justify-center text-center items-center">
           <Spotlight
             className="-top-[20px] left-[20px] md:left-[22vw] md:-top-[10vh]"
             fill="white"
@@ -79,13 +92,14 @@ export function Page() {
               <img
                 src="/image.png"
                 alt="Coding Image"
+                loading="lazy"
                 className="relative w-full h-full rounded-[inherit] object-contain"
               />
             </div>
           </div>
         </div>
-        <Companies />
       </section>
+      <Details />
       <CardSection />
       <ProjectSection />
     </>

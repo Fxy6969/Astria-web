@@ -24,15 +24,26 @@ const config = {
       },
     },
     extend: {
+      boxShadow: {
+        navbar_button: "rgba(234, 234, 251, 0.1) 0px -4px 12px 0px inset",
+        main_tag: "rgba(234, 234, 251, 0.1) 0px -4px 12px 0px inset",
+      },
       fontSize: {
         xs: "0.70rem",
       },
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(115.54deg, #FFFFFF -75.36%, #FF7D7D 59.61%, #8CA5FF 218.05%)",
+
+        bg_navbar_button:
+          "linear-gradient(rgba(234, 234, 251, 0) 0%, rgba(234, 234, 251, 0.05) 100%)",
+        "bg_nav":
+          "linear-gradient(to left, #E0E0E0 20%, #E0E0E0 44%, #6B7280 50%, #9CA3AF 60%, #E0E0E0 63%, #E0E0E0 100%)",
       },
       backgroundColor: {
         "custom-purple": "rgba(46, 7, 33)",
+        "nav-background": "rgba(255, 255, 255, 0.04)",
+        "nav-background-button": "rgba(206, 206, 251, 0.01)",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -41,14 +52,28 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         back: "rgba(9, 9, 11)",
-        navbar_bg: "#22222215",
+
+        // navbar
+        navbar_border: "rgba(206, 206, 251, 0.06)",
+        navbar_text_color: "rgba(232, 232, 232, .75)",
+        navbar_border_color: "rgba(206, 206, 251, 0.2)",
+        navbar_border_color2: "rgba(206, 206, 251, 0.16)",
+        navbar_shadow: "rgba(234, 234, 251, 0.1)",
 
         // Cards
         card_bg: "rgba(78, 78, 78, 0.1)",
+        card_bg_darker: "rgba(15, 15, 15, 0.5)",
         text_gray: "rgba(255, 255, 255, 0.4)",
+        text_red: "#FF9D9D",
 
         // adapt section
         purple: "#aa2570",
+
+        // navbar
+        nav_border: "#bebebe80",
+        nav_text: "#999",
+        nav_text_active: "#000",
+
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -153,8 +178,29 @@ const config = {
             opacity: "0",
           },
         },
+        "spin-around": {
+          "0%": {
+            transform: "translateZ(0) rotate(0)",
+          },
+          "15%, 35%": {
+            transform: "translateZ(0) rotate(90deg)",
+          },
+          "65%, 85%": {
+            transform: "translateZ(0) rotate(270deg)",
+          },
+          "100%": {
+            transform: "translateZ(0) rotate(360deg)",
+          },
+        },
+        slide: {
+          to: {
+            transform: "translate(calc(100cqw - 100%), 0)",
+          },
+        },
       },
       animation: {
+        "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        slide: "slide var(--speed) ease-in-out infinite alternate",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",
         meteor: "meteor 5s linear infinite",
         spotlight: "spotlight 2s ease .75s 1 forwards",

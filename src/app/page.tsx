@@ -3,7 +3,6 @@ import { Page } from "../components/home";
 import Particles from "@/components/magicui/particles";
 import { Footer } from "@/components/magicui/footer";
 
-import WebGLComponent from "./app";
 import "./style.css";
 
 export default function Home() {
