@@ -79,10 +79,10 @@ export default function CardSection() {
         </div>
 
         <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[37rem] h-[22rem] rounded-[13px] rounded-tr-[53px] backdrop-blur-xl">
-          <div className="group pt-3 flex flex-col justify-center items-center">
-            <div className="relative w-full max-w-[265px] rounded-2xl border">
+          <div className="group pt-7 flex flex-col justify-center items-center">
+            <div className="relative w-full max-w-[265px] rounded-2xl border transition-all duration-500 backdrop-blur-0 group-hover:backdrop-blur-[50px]">
               <BorderBeam card={true} size={150} duration={6} delay={2} />
-
+              <div className="z-[-1] absolute bottom-0 w-full h-5/3 md:h-[2rem] blur-[15vh] bg-custom-gradient opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
               <div className="p-5">
                 <div className="flex justify-between items-center">
                   <div>
@@ -93,9 +93,6 @@ export default function CardSection() {
                       <div className="text-xs font-medium text-emerald-500">
                         +48%
                       </div>
-                    </div>
-                    <div className="text-sm font-medium text-slate-500">
-                      Monthly visits
                     </div>
                   </div>
                   <button className="w-8 h-8 flex justify-center items-center text-slate-500 hover:text-slate-400">
@@ -121,23 +118,24 @@ export default function CardSection() {
                   alt="Card image 01"
                 />
               </div>
-              <div className="z-[1] absolute bottom-0 w-full h-5/3 md:h-[10rem] bg-gradient-to-b from-transparent to-70% to-card_bg_darker"></div>
+              {/* <div className="z-[1] absolute bottom-0 w-full h-5/3 md:h-[10rem] bg-gradient-to-b from-transparent to-70% to-card_bg_darker"></div> */}
             </div>
           </div>
-          <p className="mx-auto text-[12px] blur-xl text-text_red text-center mt-[-3px]">
+          <p className="mx-auto text-[12px] blur-xl text-text_red text-center mt-[3px]">
             \n Boost
           </p>
           <div className="flex items-center justify-center">
             <MdAdsClick className="mr-2 text-text_red" />
             <p className="text-[12px] text-text_red text-center">Boost</p>
           </div>
-          <p className="font-medium text-[24px] text-center mt-[-9px]">
+          <p className="font-medium text-[24px] text-center mt-[-6px]">
             Conversion Rates
           </p>
           <p className="text-[14px] text-text_gray text-center">
             Our designs boost your conversion rates. With visually
             <br /> appealing and intuitive layouts, we turn visitors into
-            <br /> customers, helping your website achieve its goals.
+            customers, <br />
+            helping your website achieve its goals.
           </p>
         </div>
         <div className="w-full flex justify-center gap-2">
