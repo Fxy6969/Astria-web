@@ -34,7 +34,8 @@ const config = {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(115.54deg, #FFFFFF -75.36%, #FF7D7D 59.61%, #8CA5FF 218.05%)",
-
+        card_comp_bg:
+          "linear-gradient(45deg, hsla(0, 73%, 25%, 1) 0%, hsla(10, 100%, 79%, 1) 100%);",
         bg_navbar_button:
           "linear-gradient(rgba(234, 234, 251, 0) 0%, rgba(234, 234, 251, 0.05) 100%)",
         "bg_nav":
@@ -43,6 +44,8 @@ const config = {
       backgroundColor: {
         "custom-purple": "rgba(46, 7, 33)",
         "nav-background": "rgba(255, 255, 255, 0.04)",
+        "cards-comp-background": "rgba(20, 20, 20, 1)",
+        "cards-comp-background_middle": "rgba(20, 20, 20, 1)",
         "nav-background-button": "rgba(206, 206, 251, 0.01)",
       },
       colors: {
