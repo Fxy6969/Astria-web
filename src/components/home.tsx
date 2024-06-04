@@ -19,6 +19,8 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import CardSection from "@/components/sections/cards";
 import ProjectSection from "@/components/sections/projects";
 import Details from "@/components/sections/details";
+import FeatureSection from "@/components/sections/features";
+import { CalltoActionSection } from "@/components/sections/end";
 
 export function Page() {
   const ref = useRef(null);
@@ -88,7 +90,7 @@ export function Page() {
               }`}
             >
               <div className="absolute w-full h-[5rem] blur-[15vh] bg-custom-gradient -z-1"></div>
-              <BorderBeam card={true} size={150} duration={6} delay={2} />
+              <BorderBeam card={true} size={150} duration={8} delay={2} />
               <img
                 src="/image.png"
                 alt="Coding Image"
@@ -102,6 +104,8 @@ export function Page() {
       <Details />
       <CardSection />
       <ProjectSection />
+      <FeatureSection />
+      <CalltoActionSection />
     </>
   );
 }

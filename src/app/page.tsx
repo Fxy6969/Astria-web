@@ -1,7 +1,10 @@
 "use client";
-import { Page } from "../components/home";
+
 import Particles from "@/components/magicui/particles";
+
+// sections
 import { Footer } from "@/components/magicui/footer";
+import { Page } from "../components/home";
 
 import "./style.css";
 

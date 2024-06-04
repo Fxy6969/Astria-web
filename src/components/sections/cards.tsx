@@ -6,6 +6,8 @@ import { Moving } from "@/components/custom-comps/moving";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import TextShimmer from "@/components/magicui/text-shimmer";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
+import { AnimatePresence, motion } from "framer-motion";
+import { CanvasRevealEffect } from "@/components/magicui/canvas-reveal";
 
 // icons
 import { MdShowChart } from "react-icons/md";
@@ -17,6 +19,7 @@ import { HiQuestionMarkCircle } from "react-icons/hi";
 
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import React from "react";
 
 export default function CardSection() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -25,6 +28,7 @@ export default function CardSection() {
 
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+  const [hovered, setHovered] = React.useState(false);
 
   return (
     <section className="w-full pt-20">
@@ -98,19 +102,17 @@ export default function CardSection() {
 
         <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[37rem] h-[22rem] rounded-[13px] rounded-tr-[53px] backdrop-blur-xl">
           <div className="group pt-7 flex flex-col justify-center items-center">
-            <div className="relative w-full max-w-[265px] rounded-2xl border transition-all duration-500 backdrop-blur-0 group-hover:backdrop-blur-[50px]">
+            <div className="z-50 relative w-full max-w-[265px] rounded-2xl border transition-all duration-500 backdrop-blur-0 group-hover:backdrop-blur-[50px]">
               <BorderBeam card={true} size={70} duration={6} delay={2} />
               <div className="z-[-1] absolute bottom-0 w-full h-5/3 md:h-[2rem] blur-[15vh] bg-custom-gradient opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
               <div className="p-5">
-                <div className="flex justify-between items-center">
-                  <div>
-                    <div className="flex space-x-2 items-center mb-0.5">
-                      <div className="text-2xl font-bold text-slate-200 mb-1">
-                        17,479
-                      </div>
-                      <div className="text-xs font-medium text-emerald-500">
-                        +48%
-                      </div>
+                <div className="z-50 flex justify-between items-center">
+                  <div className="flex space-x-2 items-center mb-0.5">
+                    <div className="text-2xl font-bold text-slate-200 mb-1">
+                      17,479
+                    </div>
+                    <div className="text-xs font-medium text-emerald-500">
+                      +48%
                     </div>
                   </div>
                   <button className="w-8 h-8 flex justify-center items-center text-slate-500 hover:text-slate-400">
@@ -216,31 +218,61 @@ export default function CardSection() {
               <br /> support.
             </p>
           </div>
-          <div className="group border-[1.7px] hover:border-white/25 transition-all bg-card_bg w-[22rem] h-[22rem] rounded-[13px] backdrop-blur-xl">
-            <div className="rounded-xl animate-fade-up h-full opacity-0 [--animation-delay:400ms] [perspective:2000px] relative after:absolute after:inset-0 after:rounded-xl after:[background:linear-gradient(to_top,hsl(var(--background))_10%,transparent)]">
-              <div className="px-5">
-                <img
-                  className="relative z-10"
-                  src="./card_3.png"
-                  width="260"
-                  height="173"
-                  alt="Card image 01"
-                />
-                <div className="relative">
-                  <img
-                    className="relative z-20 -top-[100px]"
-                    src="./card_3_1.png"
-                    width="310"
-                    height="173"
-                    alt="Card image 02"
-                  />
-                  <BorderBeam card={true} size={150} duration={6} delay={2} />
-                </div>
-              </div>
+          <div className="flex flex-col gap-2">
+            <div className="group border-[1.7px] hover:border-white/25 transition-all bg-card_bg w-[22rem] h-[10.75rem] rounded-[13px] backdrop-blur-xl">
+              <h1 className="pl-6 pt-6 leading-[6vh] tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
+                <NumberTicker value={30} />%
+              </h1>
+              <p className="font-regular pl-6 pt-7 text-[15px] text-start text-text_gray">
+                <NumberTicker value={30} />% Increase in Conversion Rates.{" "}
+                <br />
+                We can insure a boost in conversion rates.
+              </p>
+            </div>
+            <div className="group border-[1.7px] hover:border-white/25 transition-all bg-card_bg w-[22rem] h-[10.75rem] rounded-[13px] backdrop-blur-xl">
+              <h1 className="pl-6 pt-6 leading-[6vh] tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
+                <NumberTicker value={45} />%
+              </h1>
+              <p className="font-regular pl-6 pt-7 text-[15px] text-start text-text_gray">
+                <NumberTicker value={45} />% Increase in Engagement. <br />
+                We can insure a increase in Engagement.
+              </p>
             </div>
           </div>
-
-          <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[25.7rem] h-[22rem] rounded-[13px] rounded-br-[53px] backdrop-blur-xl"></div>
+          <div
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+            className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[25.7rem] h-[22rem] rounded-[13px] rounded-br-[53px] backdrop-blur-xl"
+          >
+            <div className="flex justify-center items-center z-20">
+              <h1 className="z-50 pt-[3rem] leading-tight tracking-normal font-semibold text-[60px] bg-custom-gradient bg-clip-text text-transparent">
+                Our Resolute
+                <br /> Commitment
+                <br /> to Detail
+              </h1>
+            </div>
+            {/* <div className="absolute z-50 transition-all delay-700 [perspective:2000px] opacity-0 hover:opacity-100 [--animation-delay:400ms] rounded-[inherit] inset-0 hover:[background:linear-gradient(to_top,hsl(var(--background))_1%,transparent)]" /> */}
+            <AnimatePresence>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="h-full w-full absolute inset-0 rounded-[13px]"
+              >
+                <CanvasRevealEffect
+                  animationSpeed={5}
+                  containerClassName="bg-transparent rounded-[13px]"
+                  colors={[
+                    [255, 122, 122],
+                    [69, 41, 41],
+                  ]}
+                  opacities={[0.2, 0.2, 0.2, 0.2, 0.2, 0.4, 0.4, 0.4, 0.4, 1]}
+                  dotSize={2}
+                />
+              </motion.div>
+            </AnimatePresence>
+            {/* Radial gradient for the cute fade */}
+          </div>
         </div>
       </div>
     </section>

@@ -200,8 +200,17 @@ const config = {
             transform: "translate(calc(100cqw - 100%), 0)",
           },
         },
+        aurora: {
+          from: {
+            backgroundPosition: "50% 50%, 50% 50%",
+          },
+          to: {
+            backgroundPosition: "350% 50%, 350% 50%",
+          },
+        },
       },
       animation: {
+        aurora: "aurora 60s linear infinite",
         "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
         slide: "slide var(--speed) ease-in-out infinite alternate",
         "border-beam": "border-beam calc(var(--duration)*1s) infinite linear",

@@ -94,7 +94,7 @@ const footerSocials = [
 
 export function Footer() {
   return (
-    <footer className="border-t">
+    <footer className="border-t backdrop-blur-[100px]">
       <div className="mx-auto w-full max-w-screen-xl px-4">
         <div className="gap-4 p-4 py-16 sm:pb-16 md:flex md:justify-between">
           <div className="mb-12 flex flex-col gap-4">

@@ -41,7 +41,7 @@ export default function ProjectSection() {
           />
         </div>
       </div>
-      <div className="pt-80"></div>
+      {/* <div className="pt-80"></div> */}
     </section>
   );
 }
