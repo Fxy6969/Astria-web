@@ -9,11 +9,11 @@ import { IoIosChatboxes } from "react-icons/io";
 
 export default function Detail() {
   return (
-    <section className="mb-[15vh]">
+    <section className="relative mb-[15vh]">
       <Companies />
 
       <div className="flex justify-center items-center">
-        <div className="flex gap-[1vw] h-min w-max">
+        <div className="grid grid-cols-1 gap-5 md:text-[5px] md:grid-cols-2 xl:grid-cols-3 sm:px-0 mt-5">
           <div className="flex items-center w-[20vw] h-[10vh] bg-card_bg rounded-[12px] border">
             <div className="flex items-center justify-center ml-[0.5vw] w-[2vw] h-[3.8vh] border bg-transparent rounded-[5px]">
               <FaPaintbrush size={15} />
@@ -22,9 +22,8 @@ export default function Detail() {
             <p className="text-[13px] pl-[12px] font-semibold">
               Craft a winning solution{" "}
               <span className="text-text_gray font-normal">
-                that not only draws in <br />
-                more customers but also secures a boost on <br />
-                your service.
+                that not only draws in more customers but also secures a boost
+                on your service.
               </span>
             </p>
           </div>

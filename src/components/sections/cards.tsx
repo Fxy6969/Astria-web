@@ -8,6 +8,7 @@ import TextShimmer from "@/components/magicui/text-shimmer";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/magicui/canvas-reveal";
+import { TextRevealCard } from "@/components/magicui/text-reveal-card";
 
 // icons
 import { MdShowChart } from "react-icons/md";
