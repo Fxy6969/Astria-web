@@ -22,8 +22,9 @@ export default function Detail() {
             <p className="text-[13px] pl-[12px] font-semibold">
               Craft a winning solution{" "}
               <span className="text-text_gray font-normal">
-                that not only draws in more customers but also secures a boost
-                on your service.
+                that not only draws in <br />
+                more customers but also secures a boost on <br />
+                your service.
               </span>
             </p>
           </div>
