@@ -28,9 +28,7 @@ export function Page() {
 
   return (
     <>
-      <Header />
-
-      <section className="relative mx-auto mt-[9rem] max-w-[80rem] px-6 text-center md:px-8">
+      <section className="relative mx-auto mt-[9rem] md:mt-[3rem] max-w-[80rem] px-6 text-center md:px-8">
         <div className="flex text-center items-center justify-center">
           <div className="flex text-center items-center justify-center gap-6 rounded-[999px] p-1 pr-2 shadow-main_tag w-max border-[1px] border-navbar_shadow border-solid backdrop-blur-[12px] bg-nav-background">
             <div className="shadow-main_tag rounded-[999px] pr-[5px] pt-[2px] pb-[2px] pl-[5px] w-max border-[1px] border-navbar_shadow border-solid backdrop-blur-[12px] bg-nav-background">

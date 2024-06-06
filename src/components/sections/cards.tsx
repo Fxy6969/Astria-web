@@ -60,7 +60,7 @@ export default function CardSection() {
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3 md:p-10">
           <div className="group flex flex-col justify-center items-center border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg col-span-2 md:col-span-1 w-full h-[22rem] rounded-[13px] rounded-tl-[53px] backdrop-blur-xl p-6">
             <div className="relative group-hover:-translate-y-0 transition-transform duration-500 ease-in-out">
               <img
@@ -227,7 +227,7 @@ export default function CardSection() {
                 <h1 className="pl-6 pt-6 leading-[6vh] tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
                   <NumberTicker value={30} />%
                 </h1>
-                <p className="font-regular pl-6 pt-7 text-[15px] text-start text-text_gray">
+                <p className="font-regular pl-6 pt-6 text-[15px] text-start text-text_gray">
                   <NumberTicker value={30} />% Increase in Conversion Rates.{" "}
                   <br />
                   We can insure a boost in conversion rates.
@@ -237,7 +237,7 @@ export default function CardSection() {
                 <h1 className="pl-6 pt-6 leading-[6vh] tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
                   <NumberTicker value={45} />%
                 </h1>
-                <p className="font-regular pl-6 pt-7 text-[15px] text-start text-text_gray">
+                <p className="font-regular pl-7 pt-6 text-[15px] text-start text-text_gray">
                   <NumberTicker value={45} />% Increase in Engagement. <br />
                   We can insure a increase in Engagement.
                 </p>
@@ -250,13 +250,13 @@ export default function CardSection() {
               className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[25.7rem] h-[22rem] rounded-[13px] rounded-br-[53px] backdrop-blur-xl"
             >
               <div className="flex justify-center items-center z-20">
-                <h1 className="z-50 pt-[3rem] leading-tight tracking-normal font-semibold text-[60px] bg-custom-gradient bg-clip-text text-transparent">
+                <h1 className="z-50 md:text-[55px] pt-[3rem] leading-tight tracking-normal font-semibold text-[60px] bg-custom-gradient bg-clip-text text-transparent">
                   Our Resolute
                   <br /> Commitment
                   <br /> to Detail
                 </h1>
               </div>
-              <AnimatePresence>
+              {/* <AnimatePresence>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -274,7 +274,7 @@ export default function CardSection() {
                     dotSize={2}
                   />
                 </motion.div>
-              </AnimatePresence>
+              </AnimatePresence> */}
             </div>
           </div>
         </div>

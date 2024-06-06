@@ -19,7 +19,7 @@ import { FaCodePullRequest } from "react-icons/fa6";
 export default function FeatureSection() {
   return (
     <section className="relative pt-40 pb-60">
-      <div className="flex flex-col items-start ml-40">
+      <div className="flex flex-col items-start p-10">
         <div className="backdrop-blur-[24px] border rounded-2xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
           <TextShimmer className="inline-flex items-center justify-center">
             <span>🫨 What does Eclipse offer?</span>{" "}

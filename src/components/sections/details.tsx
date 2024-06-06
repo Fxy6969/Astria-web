@@ -13,13 +13,13 @@ export default function Detail() {
       <Companies />
 
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 gap-5 md:text-[5px] md:grid-cols-2 xl:grid-cols-3 sm:px-0 mt-5">
-          <div className="flex items-center w-[20vw] h-[10vh] bg-card_bg rounded-[12px] border">
+        <div className="grid grid-cols-1 gap-3 md:text-[5px] md:grid-cols-2 xl:grid-cols-3 sm:px-0 md:mt-3 mt-5">
+          <div className="flex items-center w-full h-[10vh] bg-card_bg rounded-[12px] border">
             <div className="flex items-center justify-center ml-[0.5vw] w-[2vw] h-[3.8vh] border bg-transparent rounded-[5px]">
               <FaPaintbrush size={15} />
             </div>
 
-            <p className="text-[13px] pl-[12px] font-semibold">
+            <p className="text-[13px] md:text-[12px] sd:text-[8px] pl-[12px] font-semibold">
               Craft a winning solution{" "}
               <span className="text-text_gray font-normal">
                 that not only draws in <br />
@@ -29,12 +29,12 @@ export default function Detail() {
             </p>
           </div>
 
-          <div className="flex items-center w-[20vw] h-[10vh] bg-card_bg rounded-[12px] border">
+          <div className="flex items-center w-max h-[10vh] bg-card_bg rounded-[12px] border">
             <div className="flex items-center justify-center ml-[0.5vw] w-[2vw] h-[3.8vh] border bg-transparent rounded-[5px]">
               <FaCloud size={15} />
             </div>
 
-            <p className="text-[13px] pl-[12px] font-semibold">
+            <p className="text-[13px] md:text-[12px] pl-[12px] font-semibold">
               Craft an online presence{" "}
               <span className="text-text_gray font-normal">
                 that's visually stunning,
@@ -44,12 +44,12 @@ export default function Detail() {
             </p>
           </div>
 
-          <div className="flex items-center w-[20vw] h-[10vh] bg-card_bg rounded-[12px] border">
+          <div className="flex items-center w-max h-[10vh] bg-card_bg rounded-[12px] border">
             <div className="flex items-center justify-center ml-[0.5vw] w-[2vw] h-[3.8vh] border bg-transparent rounded-[5px]">
               <IoIosChatboxes size={15} />
             </div>
 
-            <p className="text-[13px] pl-[12px] font-semibold">
+            <p className="text-[13px] md:text-[12px] pl-[12px] font-semibold">
               Unlimited components,{" "}
               <span className="text-text_gray font-normal">
                 We effortlessly customize <br />

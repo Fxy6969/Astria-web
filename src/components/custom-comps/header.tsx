@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 export default function Header() {
   return (
     <div className="flex justify-center">
-      <div className="z-10 fixed p-3 m-4 border-[1px] border-navbar_border border-solid backdrop-blur-[16px] bg-nav-background rounded-[17px] w-max max-w-max">
+      <div className="z-10 md:relative sd:relative fixed p-3 m-4 border-[1px] border-navbar_border border-solid backdrop-blur-[16px] bg-nav-background rounded-[17px] w-max max-w-max">
         <div className="flex items-center gap-[13vw]">
           <Link
             href="/"
