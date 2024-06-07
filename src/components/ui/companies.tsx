@@ -9,9 +9,8 @@ const payments = ["PayPal", "Stripe", "Coinbase"];
 export function Companies() {
   return (
     <section id="companies">
-      <SphereMask />
       <div className="container mx-auto px-4 mt-[4px] md:px-8">
-        <div className="relative mt-10 mb-[5vh]">
+        <div className="relative mb-[10vh]">
           {/* <div className="backdrop-blur-xl border rounded-2xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
             <TextShimmer className="inline-flex items-center justify-center">
               <span>We are available on</span>{" "}

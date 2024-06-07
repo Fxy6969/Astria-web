@@ -5,7 +5,7 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { Button } from "@/components/ui/button";
 import WordRotate from "./magicui/word-rotate";
 import { BorderBeam } from "@/components/magicui/border-beam";
-import Header from "@/components/custom-comps/header";
+import Header from "@/components/header/header";
 
 import Link from "next/link";
 import React from "react";
@@ -99,7 +99,7 @@ export function Page() {
           </div>
         </div>
       </section>
-      <Details />
+      {/* <Details /> */}
       <CardSection />
       <ProjectSection />
       <FeatureSection />

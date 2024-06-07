@@ -38,6 +38,8 @@ const config = {
           "linear-gradient(45deg, hsla(0, 73%, 25%, 1) 0%, hsla(10, 100%, 79%, 1) 100%);",
         bg_navbar_button:
           "linear-gradient(rgba(234, 234, 251, 0) 0%, rgba(234, 234, 251, 0.05) 100%)",
+        bg_navbar_button2:
+          "linear-gradient(0deg, rgba(91,40,40,1) 0%, rgba(255,151,151,1) 100%)",
         "bg_nav":
           "linear-gradient(to left, #E0E0E0 20%, #E0E0E0 44%, #6B7280 50%, #9CA3AF 60%, #E0E0E0 63%, #E0E0E0 100%)",
       },
@@ -61,12 +63,14 @@ const config = {
         navbar_text_color: "rgba(232, 232, 232, .75)",
         navbar_border_color: "rgba(206, 206, 251, 0.2)",
         navbar_border_color2: "rgba(206, 206, 251, 0.16)",
+        navbar_border_color3: "rgba(255, 115, 115, 0.16)",
         navbar_shadow: "rgba(234, 234, 251, 0.1)",
 
         // Cards
         card_bg: "rgba(78, 78, 78, 0.1)",
         card_bg_darker: "rgba(15, 15, 15, 0.5)",
         text_gray: "rgba(255, 255, 255, 0.4)",
+        text_gray_lighter: "rgba(255, 255, 255, 0.7)",
         text_red: "#FF9D9D",
 
         // adapt section

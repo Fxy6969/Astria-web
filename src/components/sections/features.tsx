@@ -18,8 +18,8 @@ import { FaCodePullRequest } from "react-icons/fa6";
 
 export default function FeatureSection() {
   return (
-    <section className="relative pt-40 pb-60">
-      <div className="flex flex-col items-start p-10">
+    <section className="relative pt-20 pb-60">
+      <div className="flex flex-col items-start md:p-10 lg:p-20">
         <div className="backdrop-blur-[24px] border rounded-2xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
           <TextShimmer className="inline-flex items-center justify-center">
             <span>🫨 What does Eclipse offer?</span>{" "}
@@ -49,7 +49,7 @@ export default function FeatureSection() {
               <div>
                 <MdOutlineLibraryAdd fill="gray" />
               </div>
-              <h3 className="text-base tracking-tight font-medium leading-6 text-white">
+              <h3 className="text-base tracking-tight font-semibold leading-6 text-white">
                 Unlimited Components
               </h3>
             </div>
@@ -68,7 +68,7 @@ export default function FeatureSection() {
               <div>
                 <MdOutlineSecurity fill="gray" />
               </div>
-              <h3 className="text-base tracking-tight font-medium leading-6 text-white">
+              <h3 className="text-base tracking-tight font-semibold leading-6 text-white">
                 Seamless Third-Party Integrations
               </h3>
             </div>
@@ -87,7 +87,7 @@ export default function FeatureSection() {
               <div>
                 <PiStrategy fill="gray" />
               </div>
-              <h3 className="text-base tracking-tight font-medium leading-6 text-white">
+              <h3 className="text-base tracking-tight font-semibold leading-6 text-white">
                 Strategic Design Elements
               </h3>
             </div>
@@ -106,7 +106,7 @@ export default function FeatureSection() {
               <div>
                 <IoIosStats fill="gray" />
               </div>
-              <h3 className="text-base tracking-tight font-medium leading-6 text-white">
+              <h3 className="text-base tracking-tight font-semibold leading-6 text-white">
                 Craft a Website that Captivates
               </h3>
             </div>
@@ -124,7 +124,7 @@ export default function FeatureSection() {
               <div>
                 <FaWandMagicSparkles fill="gray" />
               </div>
-              <h3 className="text-base tracking-tight font-medium leading-6 text-white">
+              <h3 className="text-base tracking-tight font-semibold leading-6 text-white">
                 Your Brand Deserves More Than Stock Photos
               </h3>
             </div>
@@ -143,7 +143,7 @@ export default function FeatureSection() {
               <div>
                 <FaCodePullRequest fill="gray" />
               </div>
-              <h3 className="text-base tracking-tight font-medium leading-6 text-white">
+              <h3 className="text-base tracking-tight font-semibold leading-6 text-white">
                 Beyond Pixels: Strategic Web Design for Measurable Growth.
               </h3>
             </div>

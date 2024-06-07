@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { LinkedInLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
+import { TwitterLogoIcon } from "@radix-ui/react-icons";
+import { FaDiscord } from "react-icons/fa";
 import { ChevronRight, HeartHandshake } from "lucide-react";
 import RadialGradient from "@/components/magicui/radial-gradient";
 
@@ -34,10 +35,6 @@ const footerNavs = [
         name: "About Us",
       },
       {
-        href: "/blog",
-        name: "Blog",
-      },
-      {
         href: "/careers",
         name: "Careers",
       },
@@ -50,14 +47,6 @@ const footerNavs = [
   {
     label: "Resources",
     items: [
-      {
-        href: "/docs",
-        name: "Documentation",
-      },
-      {
-        href: "/api",
-        name: "API Reference",
-      },
       {
         href: "/community",
         name: "Community",
@@ -82,8 +71,8 @@ const footerNavs = [
 const footerSocials = [
   {
     href: "/",
-    name: "Linkedin",
-    icon: <LinkedInLogoIcon className="size-4" />,
+    name: "Discord",
+    icon: <FaDiscord className="size-4" />,
   },
   {
     href: "/",
@@ -99,7 +88,6 @@ export function Footer() {
         <div className="gap-4 p-4 py-16 sm:pb-16 md:flex md:justify-between">
           <div className="mb-12 flex flex-col gap-4">
             <a href="/" className="flex items-center gap-2">
-              <HeartHandshake className="size-8 text-black dark:text-white" />
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
                 Eclipse
               </span>

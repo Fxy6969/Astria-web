@@ -256,7 +256,7 @@ export default function CardSection() {
                   <br /> to Detail
                 </h1>
               </div>
-              {/* <AnimatePresence>
+              <AnimatePresence>
                 <motion.div
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -274,7 +274,7 @@ export default function CardSection() {
                     dotSize={2}
                   />
                 </motion.div>
-              </AnimatePresence> */}
+              </AnimatePresence>
             </div>
           </div>
         </div>
