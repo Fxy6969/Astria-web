@@ -6,8 +6,6 @@ import TextShimmer from "@/components/magicui/animated-shiny-text";
 import { SphereMask } from "@/components/magicui/sphere-mask";
 
 // icons
-import { FaPaintbrush } from "react-icons/fa6";
-import { FaCloud } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 
 export default function Detail() {

@@ -5,7 +5,6 @@ import { Spotlight } from "@/components/ui/Spotlight";
 import { Button } from "@/components/ui/button";
 import WordRotate from "./magicui/word-rotate";
 import { BorderBeam } from "@/components/magicui/border-beam";
-import Header from "@/components/header/header";
 
 import Link from "next/link";
 import React from "react";
@@ -18,7 +17,6 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 // Sections
 import CardSection from "@/components/sections/cards";
 import ProjectSection from "@/components/sections/projects";
-import Details from "@/components/sections/details";
 import FeatureSection from "@/components/sections/features";
 import { CalltoActionSection } from "@/components/sections/end";
 
@@ -62,9 +60,9 @@ export function Page() {
                   words={["ideas", "dreams", "vision"]}
                 />
               </div>
-              <br className="hidden md:block" /> to life with{" "}
-              <span className="hidden md:block bg-gradient-to-br from-red-300 from-30% to-red-800 bg-clip-text text-transparent">
-                {" "}
+              <br className="" /> to life with{" "}
+              <span className="bg-gradient-to-br from-red-300 from-30% to-red-800 bg-clip-text text-transparent">
+                <br />
                 Eclipse
               </span>
             </h1>

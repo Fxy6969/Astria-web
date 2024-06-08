@@ -1,14 +1,11 @@
 "use client";
 
 import NumberTicker from "../magicui/number-ticker";
-import RadialGradient from "@/components/magicui/radial-gradient";
-import { Moving } from "@/components/custom-comps/moving";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import TextShimmer from "@/components/magicui/text-shimmer";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import { AnimatePresence, motion } from "framer-motion";
 import { CanvasRevealEffect } from "@/components/magicui/canvas-reveal";
-import { TextRevealCard } from "@/components/magicui/text-reveal-card";
 
 // icons
 import { MdShowChart } from "react-icons/md";
@@ -53,15 +50,15 @@ export default function CardSection() {
             <span>🤔 Why should you choose Eclipse?</span>{" "}
           </TextShimmer>
         </div>
-        <h1 className="font-bold text-center text-6xl pt-[2vh] pb-10">
+        <h1 className="font-bold text-center md:text-6xl text-4xl pt-[2vh] pb-10">
           Revolutionize your design <br />
           experience with Eclipse
         </h1>
       </div>
 
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-2 gap-3 md:p-10">
-          <div className="group flex flex-col justify-center items-center border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg col-span-2 md:col-span-1 w-full h-[22rem] rounded-[13px] rounded-tl-[53px] backdrop-blur-xl p-6">
+        <div className="grid grid-cols-2 gap-3 p-20 md:p-10">
+          <div className="group flex flex-col justify-center items-center border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg col-span-2 md:col-span-1 w-full h-[22rem] rounded-[13px] md:rounded-tl-[53px] backdrop-blur-xl p-6">
             <div className="relative group-hover:-translate-y-0 transition-transform duration-500 ease-in-out">
               <img
                 className="group-hover:opacity-0 transition-opacity duration-500"
@@ -102,7 +99,7 @@ export default function CardSection() {
             </p>
           </div>
 
-          <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg col-span-2 md:col-span-1 w-full h-[22rem] rounded-[13px] rounded-tr-[53px] backdrop-blur-xl">
+          <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg col-span-2 md:col-span-1 w-full h-[22rem] rounded-[13px] md:rounded-tr-[53px] backdrop-blur-xl">
             <div className="group pt-7 flex flex-col justify-center items-center">
               <div className="z-50 relative w-full max-w-[265px] rounded-2xl border transition-all duration-500 backdrop-blur-0 group-hover:backdrop-blur-[50px]">
                 <BorderBeam card={true} size={70} duration={6} delay={2} />
@@ -160,8 +157,8 @@ export default function CardSection() {
             </p>
           </div>
 
-          <div className="flex gap-3 col-span-2">
-            <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[25.7rem] h-[22rem] rounded-[13px] rounded-bl-[53px] backdrop-blur-xl">
+          <div className="md:flex grid gap-3 col-span-1 md:col-span-2">
+            <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[22.1rem] md:w-[25.7rem] h-[22rem] rounded-[13px] md:rounded-bl-[53px] backdrop-blur-xl">
               <div className="flex justify-center items-center pt-[5.5rem]">
                 <div
                   ref={containerRef}
@@ -214,7 +211,7 @@ export default function CardSection() {
               <p className="font-medium text-[24px] text-center mt-[-6px]">
                 The Process
               </p>
-              <p className="text-[14px] text-text_gray text-center">
+              <p className="md:text-[14px] text-text_gray text-center">
                 We understand your needs, create a plan, design and <br />
                 develop your website with your feedback,
                 <br /> test thoroughly, launch, and provide ongoing
@@ -247,10 +244,10 @@ export default function CardSection() {
             <div
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
-              className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[25.7rem] h-[22rem] rounded-[13px] rounded-br-[53px] backdrop-blur-xl"
+              className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[22.1rem] md:w-[25.7rem] h-[22rem] rounded-[13px] rounded-br-[53px] backdrop-blur-xl"
             >
               <div className="flex justify-center items-center z-20">
-                <h1 className="z-50 md:text-[55px] pt-[3rem] leading-tight tracking-normal font-semibold text-[60px] bg-custom-gradient bg-clip-text text-transparent">
+                <h1 className="z-50 text-[53px] md:text-[55px] pt-[3rem] leading-tight tracking-normal font-semibold bg-custom-gradient bg-clip-text text-transparent">
                   Our Resolute
                   <br /> Commitment
                   <br /> to Detail
