@@ -3,7 +3,7 @@
 import Link from "next/link";
 
 import { Button } from "../ui/button";
-import { Badge } from "@/components/ui/badge";
+// import { Badge } from "@/components/ui/badge";
 
 import TextShimmer from "@/components/magicui/text-shimmer";
 
