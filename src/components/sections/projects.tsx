@@ -12,7 +12,7 @@ export default function ProjectSection() {
 
   return (
     <section
-      id="projects"
+      id="project-section"
       className="relative mx-auto pt-20 mt-32 max-w-[80rem] px-6 text-center md:px-8"
     >
       <div className="justify-center text-center items-center">

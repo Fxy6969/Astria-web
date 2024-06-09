@@ -18,7 +18,7 @@ import { FaCodePullRequest } from "react-icons/fa6";
 
 export default function FeatureSection() {
   return (
-    <section className="relative pt-20 pb-60">
+    <section className="relative pt-20 pb-[15rem]">
       <div className="flex flex-col items-start p-10 lg:p-20">
         <div className="backdrop-blur-[24px] border rounded-2xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
           <TextShimmer className="inline-flex items-center justify-center">
@@ -33,11 +33,11 @@ export default function FeatureSection() {
 
         <div className="pt-6 gap-4 flex justify-center items-center">
           <Button asChild>
-            <Link href="/">Book a meeting</Link>
+            <Link href="/discord">Book a meeting</Link>
           </Button>
           <Button className="flex gap-2" variant="outline" asChild>
-            <Link href="/">
-              Contact us
+            <Link href="#pricing-section">
+              Learn more
               <FaArrowRight size={11} />
             </Link>
           </Button>

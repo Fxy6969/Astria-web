@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRef } from "react";
 
 // icons
 import { Component1Icon } from "@radix-ui/react-icons";
@@ -23,16 +24,13 @@ export default function Header() {
             <nav className="relative z-10 flex-1 items-center justify-center hidden pl-8 sm:space-x-4 lg:flex h-16">
               <div className="flex items-start justify-start text-[15px] text-navbar_text_color font-light">
                 <Button asChild variant="ghost" size={"gyat"}>
-                  <Link href="/">Pricing</Link>
+                  <Link href="#pricing-section">Pricing</Link>
                 </Button>
                 <Button asChild variant="ghost" size={"gyat"}>
-                  <Link href="/">Projects</Link>
+                  <Link href="#project-section">Projects</Link>
                 </Button>
                 <Button asChild variant="ghost" size={"gyat"}>
-                  <Link href="/">Careers</Link>
-                </Button>
-                <Button asChild variant="ghost" size={"gyat"}>
-                  <Link href="/">Developers</Link>
+                  <Link href="/discord">Careers</Link>
                 </Button>
               </div>
             </nav>
@@ -44,7 +42,7 @@ export default function Header() {
                 className="border-[1px] border-navbar_border_color border-solid bg-bg_navbar_button rounded-[6px] shadow-none text-[14px]"
                 size={"gyat"}
               >
-                <Link href="/">Contact Us</Link>
+                <Link href="/discord">Contact Us</Link>
               </Button>
             </div>
           </div>

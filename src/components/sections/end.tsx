@@ -26,13 +26,7 @@ export function CalltoActionSection() {
         </h1>
         <div className="pt-6 gap-4 flex justify-center items-center">
           <Button asChild>
-            <Link href="/">Book a meeting</Link>
-          </Button>
-          <Button className="flex gap-2" variant="outline" asChild>
-            <Link href="/">
-              Contact us
-              <FaArrowRight size={11} />
-            </Link>
+            <Link href="/discord">Book a meeting</Link>
           </Button>
         </div>
         <div className="absolute w-[26vw] h-[8rem] blur-[17vh] bg-custom-gradient z-[-1]"></div>

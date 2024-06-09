@@ -10,11 +10,11 @@ const footerNavs = [
     label: "Product",
     items: [
       {
-        href: "/features",
+        href: "#card-section",
         name: "Features",
       },
       {
-        href: "/pricing",
+        href: "/pricing-section",
         name: "Pricing",
       },
       {
@@ -31,15 +31,15 @@ const footerNavs = [
     label: "Company",
     items: [
       {
-        href: "/about",
+        href: "/discord",
         name: "About Us",
       },
       {
-        href: "/careers",
+        href: "/discord",
         name: "Careers",
       },
       {
-        href: "/contact",
+        href: "/discord",
         name: "Contact",
       },
     ],
@@ -48,7 +48,7 @@ const footerNavs = [
     label: "Resources",
     items: [
       {
-        href: "/community",
+        href: "/discord",
         name: "Community",
       },
     ],

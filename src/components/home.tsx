@@ -18,6 +18,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import CardSection from "@/components/sections/cards";
 import ProjectSection from "@/components/sections/projects";
 import FeatureSection from "@/components/sections/features";
+import PricingSection from "@/components/sections/pricing";
 import { CalltoActionSection } from "@/components/sections/end";
 
 export function Page() {
@@ -39,7 +40,7 @@ export function Page() {
                 <span>Introducing Adapt!</span>{" "}
               </TextShimmer>
               <div className="p-[2px] shadow-main_tag rounded-[999px] w-max border-[1px] border-navbar_shadow border-solid backdrop-blur-[12px] bg-nav-background">
-                <Link href="./">
+                <Link href="#pricing-section">
                   <ArrowRightIcon />
                 </Link>
               </div>
@@ -69,11 +70,11 @@ export function Page() {
           </div>
           <div className="flex items-center justify-center gap-3 pt-5">
             <Button variant="default">
-              <Link href="/pricing">Learn more</Link>
+              <Link href="#pricing-section">Learn more</Link>
               <ArrowRightIcon />
             </Button>
             <Button variant="outline">
-              <Link href="/pricing">Get started</Link>
+              <Link href="/discord">Get started</Link>
             </Button>
           </div>
           <div
@@ -97,10 +98,10 @@ export function Page() {
           </div>
         </div>
       </section>
-      {/* <Details /> */}
       <CardSection />
       <ProjectSection />
       <FeatureSection />
+      <PricingSection />
       <CalltoActionSection />
     </>
   );

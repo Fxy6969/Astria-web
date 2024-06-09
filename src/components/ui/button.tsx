@@ -27,6 +27,7 @@ const buttonVariants = cva(
         gyat: "h-8 px-4 py-2",
         gyat2: "h-8 px-3 py-2",
         gyat3: "h-7 px-3 py-2",
+        max_w: "h-10 px-[7rem] py-2",
       },
     },
     defaultVariants: {

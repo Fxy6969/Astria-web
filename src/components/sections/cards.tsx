@@ -29,7 +29,7 @@ export default function CardSection() {
   const [hovered, setHovered] = React.useState(false);
 
   return (
-    <section className="w-full pt-20">
+    <section id="card-section" className="w-full pt-20">
       {/* <div className="overflow-x-hidden absolute blur-3xl -z-50 h-full w-full rounded-lg bg-transparent">
         <RadialGradient
           className="overflow-x-hidden absolute -z-50 blur-3xl -translate-y-20 left-0 right-0 -translate-x-[61vw]"
