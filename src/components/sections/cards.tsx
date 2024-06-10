@@ -255,7 +255,7 @@ export default function CardSection() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="h-full w-full absolute inset-0 rounded-[13px]"
+                  className="h-full w-full absolute inset-0 rounded-[13px] md:hidden block"
                 >
                   <CanvasRevealEffect
                     animationSpeed={5}
