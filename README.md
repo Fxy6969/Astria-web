@@ -1,4 +1,4 @@
-This is a project made by Eclipse[https://eclipse-designs.net]
+This is a project made by [Eclipse](https://eclipse-designs.net)
 
 ## Getting Started (Testing purpose)
 
