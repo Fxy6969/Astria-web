@@ -86,7 +86,7 @@ export function Page() {
                 inView ? "before:animate-image-glow" : ""
               }`}
             >
-              <div className="absolute w-full h-[5rem] blur-[15vh] bg-custom-gradient -z-1"></div>
+              <div className="absolute animate-fade-in opacity-0 [--animation-delay:400ms] [perspective:2000px] w-full h-[5rem] blur-[15vh] after:opacity-100 bg-custom-gradient -z-1"></div>
               <BorderBeam card={true} size={150} duration={8} delay={2} />
               <img
                 src="/image.png"
