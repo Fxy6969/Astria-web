@@ -21,7 +21,7 @@ export default function PricingSection() {
           Plans that scale your Business
         </h1>
       </div>
-      <div className="flex justify-center items-center pl-10 pt-10">
+      <div className="flex justify-center items-center pl-5 pr-5 pt-10">
         <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div className="h-max w-[22rem] p-5 relative group flex flex-col justify-start items-start border-[1.7px] hover:border-white/25 transition-all bg-card_bg rounded-[13px] backdrop-blur-xl">
             <p className="text-[22px] font-bold">One Pager</p>

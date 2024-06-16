@@ -10,9 +10,9 @@ import { Button } from "@/components/ui/button";
 export default function Header() {
   return (
     <div className="sticky top-0 z-40 transform">
-      <nav className="relative z-40 border-default border-b backdrop-blur-sm transition-opacity">
+      <nav className="relative z-40 border-default border-b backdrop-blur-xl transition-opacity">
         <div className="relative flex justify-between h-16 mx-auto lg:container lg:px-16 xl:px-20">
-          <div className="flex items-center px-6 lg:px-0 flex-1 sm:items-stretch justify-between">
+          <div className="flex items-center px-6 lg:px-0 flex-1 justify-between">
             <div className="flex items-center">
               <Link href="/" className="items-center flex gap-1 font-semibold">
                 <Component1Icon />
@@ -20,7 +20,7 @@ export default function Header() {
               </Link>
             </div>
 
-            <nav className="relative z-10 flex-1 items-center justify-center hidden pl-8 sm:space-x-4 lg:flex h-16">
+            <nav className="relative z-10 flex items-center justify-center pl-8 sm:space-x-4 lg:flex h-16">
               <div className="flex items-start justify-start text-[15px] text-navbar_text_color font-light">
                 <Button asChild variant="ghost" size={"gyat"}>
                   <Link href="#pricing-section">Pricing</Link>
