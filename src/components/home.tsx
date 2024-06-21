@@ -64,7 +64,7 @@ export function Page() {
               <br className="" /> to life with{" "}
               <span className="bg-gradient-to-br from-red-300 from-30% to-red-800 bg-clip-text text-transparent">
                 <br />
-                Astria.
+                Astria
               </span>
             </h1>
           </div>
