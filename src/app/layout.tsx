@@ -25,11 +25,10 @@ export default function RootLayout({
     <>
       <html
         lang="en"
-        className={cn("font-sans antialiased", fontSans.variable)}
         suppressHydrationWarning
       >
         <head />
-        <body>
+        <body className={cn("font-sans antialiased", fontSans.variable)}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"

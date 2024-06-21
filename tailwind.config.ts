@@ -24,6 +24,9 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", ...fontFamily.sans],
+      },
       boxShadow: {
         navbar_button: "rgba(234, 234, 251, 0.1) 0px -4px 12px 0px inset",
         main_tag: "rgba(234, 234, 251, 0.1) 0px -4px 12px 0px inset",
