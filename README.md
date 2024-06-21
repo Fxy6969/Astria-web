@@ -1,4 +1,4 @@
-This is a project made by [Eclipse](https://eclipse-designs.net)
+This is a project made by [Astria](https://Astria-designs.net)
 
 ## Getting Started (Testing purpose)
 
@@ -18,7 +18,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Learn More
 
-Learn more about Eclipse:
+Learn more about Astria:
 
-- [Eclipse](https:/eclipse-designs.net)
-- [Eclipse's Discord Community](https://discord.com/)
+- [Astria](https:/Astria-designs.net)
+- [Astria's Discord Community](https://discord.com/)

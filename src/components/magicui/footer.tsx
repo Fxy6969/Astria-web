@@ -22,7 +22,7 @@ const footerNavs = [
         name: "FAQ",
       },
       {
-        href: "eclipse-support@gmail.com",
+        href: "Astria-support@gmail.com",
         name: "Support",
       },
     ],
@@ -89,7 +89,7 @@ export function Footer() {
           <div className="mb-12 flex flex-col gap-4">
             <a href="/" className="flex items-center gap-2">
               <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
-                Eclipse
+                Astria
               </span>
             </a>
           </div>
@@ -133,7 +133,7 @@ export function Footer() {
           <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
             Copyright © {new Date().getFullYear()}{" "}
             <a href="/" className="cursor-pointer">
-              Eclipse Designs
+              Astria Designs
             </a>
             . All Rights Reserved.
           </span>

@@ -22,7 +22,7 @@ export default function FeatureSection() {
       <div className="flex flex-col items-start p-10 lg:pr-40 lg:pl-40">
         <div className="backdrop-blur-[24px] border rounded-2xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
           <TextShimmer className="inline-flex items-center justify-center">
-            <span>🫨 What does Eclipse offer?</span>{" "}
+            <span>🫨 What does Astria offer?</span>{" "}
           </TextShimmer>
         </div>
         <h1 className="text-5xl font-bold pt-4">Leveled-up Designs.</h1>

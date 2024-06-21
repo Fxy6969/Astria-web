@@ -22,7 +22,7 @@ export function CalltoActionSection() {
         </div>
         <h1 className="text-5xl font-bold pt-4">
           Boost your Service <br />
-          with Eclipse.
+          with Astria.
         </h1>
         <div className="pt-6 gap-4 flex justify-center items-center">
           <Button asChild>

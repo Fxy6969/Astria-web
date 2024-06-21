@@ -14,7 +14,7 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  title: "Eclipse Designs",
+  title: "Astria Designs",
   description: "Bringing your ideas to life...",
 };
 

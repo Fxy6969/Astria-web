@@ -47,12 +47,12 @@ export default function CardSection() {
       <div className="justify-center text-center items-center">
         <div className="backdrop-blur-xl border rounded-2xl inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
           <TextShimmer className="inline-flex items-center justify-center">
-            <span>🤔 Why should you choose Eclipse?</span>{" "}
+            <span>🤔 Why should you choose Astria?</span>{" "}
           </TextShimmer>
         </div>
         <h1 className="font-bold text-center md:text-6xl text-4xl pt-[2vh] pb-10">
           Revolutionize your design <br />
-          experience with Eclipse
+          experience with Astria
         </h1>
       </div>
 

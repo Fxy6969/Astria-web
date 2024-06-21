@@ -20,7 +20,7 @@ export default function Detail() {
         </div>
         <h1 className="text-5xl font-bold pt-4">Top-Tier Experience.</h1>
         <span className="text-text_gray text-1xl font-regular mt-1">
-          You can seamlessly reach out to Eclipse through your favourite <br />
+          You can seamlessly reach out to Astria through your favourite <br />
           Platform and bring your Service to the next level.
         </span>
 

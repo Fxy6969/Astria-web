@@ -16,7 +16,7 @@ export default function Header() {
             <div className="flex items-center">
               <Link href="/" className="items-center flex gap-1 font-semibold">
                 <Component1Icon />
-                Eclipse
+                Astria
               </Link>
             </div>
 
