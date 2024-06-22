@@ -49,7 +49,7 @@ export function Page() {
         </div>
         <div className="pt-4 justify-center text-center items-center">
           <Spotlight
-            className="-top-[20px] left-[20px] md:left-[22vw] md:-top-[10vh]"
+            className="-top-[20px] left-[20px] md:left-[18vw] md:-top-[10vh]"
             fill="white"
           />
           <div className="flex justify-center text-center items-center gap-[12rem]">

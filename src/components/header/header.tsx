@@ -6,6 +6,17 @@ import Link from "next/link";
 import { Component1Icon } from "@radix-ui/react-icons";
 
 import { Button } from "@/components/ui/button";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+
 
 export default function Header() {
   return (
@@ -20,7 +31,7 @@ export default function Header() {
               </Link>
             </div>
 
-            <nav className="relative z-10 flex items-center justify-center pl-8 sm:space-x-4 lg:flex h-16">
+            <nav className="relative z-10 flex items-center justify-center pl-8 sm:space-x-4 lg:flex hidden h-16">
               <div className="flex items-start justify-start text-[15px] text-navbar_text_color font-light">
                 <Button asChild variant="ghost" size={"gyat"}>
                   <Link href="#pricing-section">Pricing</Link>
@@ -31,6 +42,29 @@ export default function Header() {
                 <Button asChild variant="ghost" size={"gyat"}>
                   <Link href="/discord">Careers</Link>
                 </Button>
+                <NavigationMenu>
+                <NavigationMenuList>
+                  <NavigationMenuItem>
+                    <NavigationMenuTrigger className="bg-transparent h-8 px-4 py-2">Policies</NavigationMenuTrigger>
+
+                    <NavigationMenuContent className="bg-card_bg">
+                    <ul className="grid gap-20 p-4 md:grid-cols-2 lg:w-max">
+                      <Link href="/terms" legacyBehavior passHref>
+                        <NavigationMenuLink>
+                          Terms of Service
+                        </NavigationMenuLink>
+                      </Link>
+
+                      <Link href="/policy" legacyBehavior passHref>
+                        <NavigationMenuLink>
+                          Purchase Policy
+                        </NavigationMenuLink>
+                      </Link>
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
               </div>
             </nav>
 

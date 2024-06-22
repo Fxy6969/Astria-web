@@ -149,16 +149,16 @@ export default function CardSection() {
             <p className="font-medium text-[24px] text-center mt-[-6px]">
               Conversion Rates
             </p>
-            <p className="text-[14px] text-text_gray text-center">
+            <p className="text-[11px] md:[14px] text-text_gray text-center">
               Our designs boost your conversion rates. With visually
-              <br /> appealing and intuitive layouts, we turn visitors into
-              customers, <br />
+              <br className="hidden md:block" /> appealing and intuitive layouts, we turn visitors into
+              customers, <br className="hidden md:block"/>
               helping your website achieve its goals.
             </p>
           </div>
 
           <div className="md:flex grid gap-3 col-span-1 md:col-span-2">
-            <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[22.1rem] md:w-[25.7rem] h-[22rem] rounded-[13px] md:rounded-bl-[53px] backdrop-blur-xl">
+            <div className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[16rem] md:w-[25.7rem] h-[22rem] rounded-[13px] md:rounded-bl-[53px] backdrop-blur-xl">
               <div className="flex justify-center items-center pt-[5.5rem]">
                 <div
                   ref={containerRef}
@@ -209,19 +209,21 @@ export default function CardSection() {
                 </p>
               </div>
               <p className="font-medium text-[24px] text-center">The Process</p>
-              <p className="text-[15px] text-text_gray text-center">
-                We understand your needs, create a plan, design and develop your
-                website with your feedback,
-                <br className="md:hidden block" /> test thoroughly and launch.
-              </p>
+              <div className="">
+                <p className="text-[13px] md:text-[15px] text-text_gray text-center">
+                  We understand your needs, create a plan, design and develop your
+                  website with your feedback,
+                  <br className="sd:hidden block" /> test thoroughly and launch.
+                </p>
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 w-[22rem] gap-y-2">
+            <div className="grid grid-cols-1 w-[16rem] md:w-[22rem] gap-y-2">
               <div className="group border-[1.7px] hover:border-white/25 transition-all bg-card_bg w-full h-[10.75rem] rounded-[13px] backdrop-blur-xl">
                 <h1 className="pl-6 pt-6 leading-[6vh] tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
                   <NumberTicker value={30} />%
                 </h1>
-                <p className="font-regular pl-6 md:pt-4 pt-6 text-[15px] text-start text-text_gray">
+                <p className="font-regular pl-6 md:pt-4 pt-6 text-[13px] md:text-[15px] text-start text-text_gray">
                   <NumberTicker value={30} />% Increase in Conversion Rates.{" "}
                   <br />
                   We can insure a boost in conversion rates.
@@ -231,7 +233,7 @@ export default function CardSection() {
                 <h1 className="pl-6 pt-6 leading-[6vh] tracking-normal font-semibold text-[52px] bg-custom-gradient bg-clip-text text-transparent">
                   <NumberTicker value={45} />%
                 </h1>
-                <p className="font-regular pl-7 md:pt-4 pt-6 text-[15px] text-start text-text_gray">
+                <p className="font-regular pl-7 md:pt-4 pt-6 text-[13px] md:text-[15px] text-start text-text_gray">
                   <NumberTicker value={45} />% Increase in Engagement. <br />
                   We can insure a increase in Engagement.
                 </p>
@@ -241,10 +243,10 @@ export default function CardSection() {
             <div
               onMouseEnter={() => setHovered(true)}
               onMouseLeave={() => setHovered(false)}
-              className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[22.1rem] md:w-[25.7rem] h-[22rem] rounded-[13px] rounded-br-[53px] backdrop-blur-xl"
+              className="group border-[1.7px] hover:border-white/25 hover:border-1 transition-all bg-card_bg w-[16rem] md:w-[25.7rem] h-[16rem] md:h-[22rem] rounded-[13px] md:rounded-br-[53px] backdrop-blur-xl"
             >
               <div className="flex justify-center items-center z-20">
-                <h1 className="z-50 md:text-[52px] pt-[3rem] leading-tight tracking-normal font-semibold text-[60px] bg-custom-gradient bg-clip-text text-transparent">
+                <h1 className="z-50 md:text-[60px] pt-[3rem] leading-tight tracking-normal font-semibold text-[37px] bg-custom-gradient bg-clip-text text-transparent">
                   Our Resolute
                   <br /> Commitment
                   <br /> to Detail
@@ -255,7 +257,7 @@ export default function CardSection() {
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  className="h-full w-full absolute inset-0 rounded-[13px] md:hidden block"
+                  className="h-full w-full absolute inset-0 rounded-[13px] hidden lg:block"
                 >
                   <CanvasRevealEffect
                     animationSpeed={5}
