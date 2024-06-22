@@ -1,4 +1,4 @@
-This is a project made by [Astria](https://Astria-designs.net)
+This is a project made by [Astria](https://astria.lol)
 
 ## Getting Started (Testing purpose)
 
@@ -20,5 +20,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Learn more about Astria:
 
-- [Astria](https:/Astria-designs.net)
+- [Astria](https://astria.lol)
 - [Astria's Discord Community](https://discord.com/)
